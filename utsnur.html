@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Love Message Generator</title>
+  <link rel="stylesheet" href="utsnur.css" />
+</head>
+<body>
+  <header class="site-header">
+    <h1 class="site-title">💌 Love Message Generator</h1>
+  </header>
+
+  <main>
+    <section class="panel panel-control" aria-labelledby="control-heading">
+      <h2 id="control-heading" class="panel-title">Panel Kontrol</h2>
+
+      <form id="love-form" autocomplete="off" novalidate>
+        <div class="form-group">
+          <label for="recipient">Nama Penerima</label>
+          <input id="recipient" name="recipient" type="text" placeholder="Contoh: Someone" />
+        </div>
+
+        <div class="form-group">
+          <label for="sender">Nama Pengirim</label>
+          <input id="sender" name="sender" type="text" placeholder="Contoh: Dari, Nur" />
+        </div>
+
+        <div class="form-group">
+          <label for="occasion">Occasion (opsional)</label>
+          <select id="occasion" name="occasion">
+            <option value="">-- Pilih suasana --</option>
+            <option value="Happy Birthday">Selamat Ulang Tahun</option>
+            <option value="Anniversary">Anniversary</option>
+            <option value="Get Well Soon">Semoga Lekas Sembuh</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="message">Pesan</label>
+          <textarea id="message" name="message" rows="6" placeholder="Ketik kata-kata manismu di sini..."></textarea>
+        </div>
+
+        <div class="form-actions">
+          <button type="button" id="reset-btn">Kembalikan ke default</button>
+        </div>
+      </form>
+    </section>
+
+    <section class="panel panel-preview" aria-labelledby="preview-heading">
+      <h2 id="preview-heading" class="panel-title">Pratinjau</h2>
+
+      <article id="preview-card" class="card" aria-live="polite">
+        <div class="card-decor"></div>
+
+        <header class="card-header">
+          <h3 id="preview-recipient" class="card-title">Untuk: My Favorite Person</h3>
+          <p id="preview-occasion" class="card-occasion"></p>
+        </header>
+
+        <section id="preview-message" class="card-message" aria-label="Pesan">
+          Happy Birthday & Love u💗
+        </section>
+
+        <footer class="card-footer">
+          <p id="preview-sender" class="card-sender">Dari: Nuy</p>
+        </footer>
+      </article>
+
+      <p class="hint">Tip: Kosongkan input untuk kembali ke teks default.</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <small>&copy; Love Message Generator • dibuat untuk UTS | Nurdalilah Selan</small>
+  </footer>
+
+  <script src="utsnur.js"></script>
+</body>
+</html>
