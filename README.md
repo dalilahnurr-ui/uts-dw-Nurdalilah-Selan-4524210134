@@ -1,7 +1,6 @@
 Nurdalilah Selan
 4524210134
 "Love Message Generator"
-Sebuah checklist yang diisi ([x]) untuk setiap fitur yang berhasil diimplementasikan:
 - [x] Repositori GitHub sudah dibuat
 - [x] Melakukan minimal 3 commit
 - [x] Menerapkan HTML Semantik (header, main, footer)
